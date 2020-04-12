@@ -19,7 +19,7 @@ const store = createStore(
   composeEnhancers(applyMiddleware(thunk))
 );
 
-ReactDOM.hydrate(
+ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,

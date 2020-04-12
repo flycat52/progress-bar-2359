@@ -12,7 +12,10 @@ const ProgressSelection = () => {
       <p>Progress Bars Demo</p>
       {bars &&
         bars.map((b, index) => {
-          return <ProgressBar key={index} now={b} label={`${b}`}></ProgressBar>;
+          const now = (b * 100) / limit;
+          return (
+            <ProgressBar key={index} now={now} label={`${now}`}></ProgressBar>
+          );
         })}
       <DropdownButton id="dropdown-basic-button" title="Dropdown button">
         {bars &&
