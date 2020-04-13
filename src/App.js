@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import './App.scss';
-import ProgressSelection from './components/ProgressSelection';
+import ProgressGroup from './components/ProgressGroup';
 
 import { fetchApi } from './actions/apiAction';
 
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <ProgressSelection />
+      <ProgressGroup />
     </div>
   );
 }
